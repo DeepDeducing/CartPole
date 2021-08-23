@@ -2,6 +2,7 @@ import numpy as np
 import gym
 import copy
 
+
 "Some basic functions to transfer real values to quantified vectors or one-hotted vectors"
 def inverse_sigmoid(input):
     return np.log((input+ 0.0000000001) /(1-input + 0.0000000001))
