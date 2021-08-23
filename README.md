@@ -22,7 +22,7 @@ scipy
 To train sets of weight matrices in the paper, run this command:
 
 ```
-Learning.py            
+Learning_xxx.py            
 ```
 
 
