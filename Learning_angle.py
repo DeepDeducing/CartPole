@@ -3,6 +3,10 @@ import gym
 import math
 
 
+"Please note that, in order to contain edge cases in the learning phase, the [def reset(self)] module in Cartpole is suggested to be set to:"\
+"self.state = self.np_random.uniform(low= -1, high= 1, size=(4,))"
+
+
 "Some basic functions to transfer real values to quantified vectors or one-hotted vectors"
 def vectorizing(array_size, init, interv, input):
     array = np.zeros(array_size)
