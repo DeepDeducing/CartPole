@@ -1,7 +1,7 @@
 # Deep Deducing on CartPole
 
-This repository contains codes illustrating how deep deducing plays CartPole.
-To reproduce the results in the paper, simply run Deducing_xxx.py
+This repository contains codes of deep deducing solving the classic control problem.
+To reproduce the results in the paper, simply run Deducing.py
 
 
 ## Requirements
@@ -17,8 +17,7 @@ numpy
 scipy
 ```
 
-## Learning phase content
-
+## Learning phase
 To train sets of weight matrices in the paper, run this command:
 
 ```
@@ -26,9 +25,9 @@ Learning_xxx.py
 ```
 
 
-## Deducing phase content
-To use sets of trained weight matrices to start to play, run this command:
+## Deducing phase
+To use sets of trained weight matrices to start deducing, run this command:
 
 ```
-Deducing_xxx.py              
+Deducing.py              
 ```
