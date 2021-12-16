@@ -1,6 +1,6 @@
-# Deep Deducing on CartPole
+# Deep Deducing on CartPole, MountainCar, Pendulum and Acrobot
 
-This repository contains codes of deep deducing solving the classic control problem.
+This repository contains codes of deep deducing solving the classic control problems.
 To reproduce the results in the paper, simply run Deducing.py
 
 
