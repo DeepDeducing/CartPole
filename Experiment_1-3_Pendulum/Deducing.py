@@ -54,7 +54,7 @@ for trials in range(10):                                                  # <<<<
 
 
     env                    = gym.make('Pendulum-v0')                          # <<<<<<<<<<<<
-    env._max_episode_steps = 99                                               # <<<<<<<<<<<<
+    env._max_episode_steps = 999                                              # <<<<<<<<<<<<
     state                  = env.reset()
     env.render()                                                              # <<<<<<<<<<<<
 
