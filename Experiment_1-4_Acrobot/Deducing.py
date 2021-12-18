@@ -100,7 +100,7 @@ for trials in range(100):                                                  # <<<
                                                                                           state_and_acton_value_resistor[:, :  weight_list[0].shape[0] ],
                                                                                           reward,
                                                                                           weight_list, slope_list)
-        action_value = state_and_acton_value[:, 600:]                                                                     # <<<<<<<<<<<<
+        action_value = state_and_acton_value[:, 600:]                                                                    # <<<<<<<<<<<<
 
 
 
