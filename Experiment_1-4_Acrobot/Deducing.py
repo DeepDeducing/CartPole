@@ -33,8 +33,8 @@ for trials in range(100):                                                  # <<<
 
     from Brain_for_deducing import *                                           # <<<<<<<<<<<<
     network_size           = np.array([100 * 6 + 3 * 100, 100, 100, 100, 100]) # <<<<<<<<<<<<
-    beta                   = 1                                               # <<<<<<<<<<<<
-    epoch_of_deducing      = 100000                                             # <<<<<<<<<<<<
+    beta                   = 1                                                 # <<<<<<<<<<<<
+    epoch_of_deducing      = 100000                                            # <<<<<<<<<<<<
     drop_rate              = 0.75                                              # <<<<<<<<<<<<
     Machine                = Brain(network_size, beta, epoch_of_deducing, drop_rate)
 
@@ -61,9 +61,9 @@ for trials in range(100):                                                  # <<<
 
 
 
-    env                    = gym.make('Acrobot-v1')                           # <<<<<<<<<<<<
+    env                     = gym.make('Acrobot-v1')                          # <<<<<<<<<<<<
     #env._max_episode_steps = 200                                             # <<<<<<<<<<<<
-    state                  = env.reset()
+    state                   = env.reset()
     env.render()                                                              # <<<<<<<<<<<<
 
 
