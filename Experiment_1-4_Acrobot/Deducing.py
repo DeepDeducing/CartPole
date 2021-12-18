@@ -77,7 +77,7 @@ for trials in range(100):                                                  # <<<
     state_5 = quantifying(100, -5, 0.10, state[5])        # <<<<<<<<<<<<
 
 
-
+ 
 
     for t in range(10000):                                                    # <<<<<<<<<<<<
         print(t)                                                              # <<<<<<<<<<<<
