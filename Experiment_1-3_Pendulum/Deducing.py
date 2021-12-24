@@ -24,7 +24,7 @@ def quantifying(array_size, init, interval, input):
 
 
 stat_list = list()
-for trials in range(10):                                                  # <<<<<<<<<<<<
+for trials in range(100):                                                  # <<<<<<<<<<<<
 
     final_reward           = 0
 
