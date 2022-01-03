@@ -34,25 +34,25 @@ for trials in range(100):                                                  # <<<
     from Brain_for_deducing import *                                       # <<<<<<<<<<<<
     network_size           = np.array([4*100 + 2 * 25, 100, 100, 100, 64]) # <<<<<<<<<<<<
     beta                   = 0.1                                           # <<<<<<<<<<<<
-    epoch_of_deducing      = 5000                                          # <<<<<<<<<<<<
+    epoch_of_deducing      = 1000                                          # <<<<<<<<<<<<
     drop_rate              = 0.75                                          # <<<<<<<<<<<<
     Machine                = Brain(network_size, beta, epoch_of_deducing, drop_rate)
 
     weight_lists = list()
     slope_lists  = list()
 
-    n_sets = 5                                                             # <<<<<<<<<<<<
+    n_sets = 25                                                            # <<<<<<<<<<<<
     for n in range(n_sets):
-        weight_name        = "100x100x100_25_0.000001_1m_0.2_[" + str(0 + n + 1) +  "]_weight_list.npy"   # <<<<<<<<<<<<
-        slope_name         = "100x100x100_25_0.000001_1m_0.2_[" + str(0 + n + 1) +  "]_slope_list.npy"    # <<<<<<<<<<<<
+        weight_name        = "100x100x100_25_0.000001_0.1m_0.2_[" + str(0 + n + 1) +  "]_weight_list.npy"   # <<<<<<<<<<<<
+        slope_name         = "100x100x100_25_0.000001_0.1m_0.2_[" + str(0 + n + 1) +  "]_slope_list.npy"    # <<<<<<<<<<<<
         weight_list        = np.load(weight_name  , allow_pickle=True)
         slope_list         = np.load(slope_name   , allow_pickle=True)
         weight_lists.append(weight_list)
         slope_lists.append(slope_list)
-    n_sets = 5                                                             # <<<<<<<<<<<<
+    n_sets = 25                                                            # <<<<<<<<<<<<
     for n in range(n_sets):
-        weight_name        = "100x100x100_25_0.000001_1m_0.2_[" + str(100 + n + 1) +  "]_weight_list.npy"   # <<<<<<<<<<<<
-        slope_name         = "100x100x100_25_0.000001_1m_0.2_[" + str(100 + n + 1) +  "]_slope_list.npy"    # <<<<<<<<<<<<
+        weight_name        = "100x100x100_25_0.000001_0.1m_0.2_[" + str(100 + n + 1) +  "]_weight_list.npy"   # <<<<<<<<<<<<
+        slope_name         = "100x100x100_25_0.000001_0.1m_0.2_[" + str(100 + n + 1) +  "]_slope_list.npy"    # <<<<<<<<<<<<
         weight_list        = np.load(weight_name  , allow_pickle=True)
         slope_list         = np.load(slope_name   , allow_pickle=True)
         weight_lists.append(weight_list)
