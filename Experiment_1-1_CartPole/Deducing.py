@@ -34,7 +34,7 @@ for trials in range(100):                                                  # <<<
     from Brain_for_deducing import *                                       # <<<<<<<<<<<<
     network_size           = np.array([4*100 + 2 * 25, 100, 100, 100, 64]) # <<<<<<<<<<<<
     beta                   = 0.1                                           # <<<<<<<<<<<<
-    epoch_of_deducing      = 1000                                          # <<<<<<<<<<<<
+    epoch_of_deducing      = 2000                                          # <<<<<<<<<<<<
     drop_rate              = 0.75                                          # <<<<<<<<<<<<
     Machine                = Brain(network_size, beta, epoch_of_deducing, drop_rate)
 
