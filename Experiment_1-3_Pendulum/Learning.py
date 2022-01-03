@@ -38,7 +38,7 @@ for n in range(n_sets):
     network_size              = np.array([100 * 3 + 20 * 10, 100, 100, 100, 100])  # <<<<<<<<<<<<
     slope                     = 25                                                 # <<<<<<<<<<<<
     alpha                     = 0.000001                                           # <<<<<<<<<<<<
-    epoch_of_learning         = 5000000                                            # <<<<<<<<<<<<
+    epoch_of_learning         = 1000000                                            # <<<<<<<<<<<<
     drop_rate                 = 0.2                                                # <<<<<<<<<<<<
     momentum_rate             = 0.9                                                # <<<<<<<<<<<<
 
@@ -123,10 +123,10 @@ for n in range(n_sets):
 
 
 
-    np.save("100x100x100_25_0.000001_5m_0.2_[" + str(start_set + n) +  "]_weight_list"             , Machine.weight_list                 ) # <<<<<<<<<<<<
-    np.save("100x100x100_25_0.000001_5m_0.2_[" + str(start_set + n) +  "]_slope_list"              , Machine.slope_list                  ) # <<<<<<<<<<<<
-    np.save("100x100x100_25_0.000001_5m_0.2_[" + str(start_set + n) +  "]_weight_list_momentum"    , Machine.weight_list_momentum        ) # <<<<<<<<<<<<
-    np.save("100x100x100_25_0.000001_5m_0.2_[" + str(start_set + n) +  "]_slope_list_momentum"     , Machine.slope_list_momentum         ) # <<<<<<<<<<<<
+    np.save("100x100x100_25_0.000001_1m_0.2_[" + str(start_set + n) +  "]_weight_list"             , Machine.weight_list                 ) # <<<<<<<<<<<<
+    np.save("100x100x100_25_0.000001_1m_0.2_[" + str(start_set + n) +  "]_slope_list"              , Machine.slope_list                  ) # <<<<<<<<<<<<
+    np.save("100x100x100_25_0.000001_1m_0.2_[" + str(start_set + n) +  "]_weight_list_momentum"    , Machine.weight_list_momentum        ) # <<<<<<<<<<<<
+    np.save("100x100x100_25_0.000001_1m_0.2_[" + str(start_set + n) +  "]_slope_list_momentum"     , Machine.slope_list_momentum         ) # <<<<<<<<<<<<
 
 
 
