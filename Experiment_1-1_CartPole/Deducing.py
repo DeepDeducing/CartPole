@@ -41,18 +41,18 @@ for trials in range(100):                                                  # <<<
     weight_lists = list()
     slope_lists  = list()
 
-    n_sets = 20                                                            # <<<<<<<<<<<<
+    n_sets = 5                                                             # <<<<<<<<<<<<
     for n in range(n_sets):
-        weight_name        = "100x100x100_25_0.000001_0.1m_0.2_[" + str(0 + n + 1) +  "]_weight_list.npy"   # <<<<<<<<<<<<
-        slope_name         = "100x100x100_25_0.000001_0.1m_0.2_[" + str(0 + n + 1) +  "]_slope_list.npy"    # <<<<<<<<<<<<
+        weight_name        = "100x100x100_25_0.000001_0.2m_0.2_[" + str(0 + n + 1) +  "]_weight_list.npy"   # <<<<<<<<<<<<
+        slope_name         = "100x100x100_25_0.000001_0.2m_0.2_[" + str(0 + n + 1) +  "]_slope_list.npy"    # <<<<<<<<<<<<
         weight_list        = np.load(weight_name  , allow_pickle=True)
         slope_list         = np.load(slope_name   , allow_pickle=True)
         weight_lists.append(weight_list)
         slope_lists.append(slope_list)
-    n_sets = 20                                                            # <<<<<<<<<<<<
+    n_sets = 5                                                             # <<<<<<<<<<<<
     for n in range(n_sets):
-        weight_name        = "100x100x100_25_0.000001_0.1m_0.2_[" + str(100 + n + 1) +  "]_weight_list.npy"   # <<<<<<<<<<<<
-        slope_name         = "100x100x100_25_0.000001_0.1m_0.2_[" + str(100 + n + 1) +  "]_slope_list.npy"    # <<<<<<<<<<<<
+        weight_name        = "100x100x100_25_0.000001_0.2m_0.2_[" + str(100 + n + 1) +  "]_weight_list.npy"   # <<<<<<<<<<<<
+        slope_name         = "100x100x100_25_0.000001_0.2m_0.2_[" + str(100 + n + 1) +  "]_slope_list.npy"    # <<<<<<<<<<<<
         weight_list        = np.load(weight_name  , allow_pickle=True)
         slope_list         = np.load(slope_name   , allow_pickle=True)
         weight_lists.append(weight_list)
