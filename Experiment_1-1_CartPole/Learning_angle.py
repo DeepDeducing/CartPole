@@ -21,7 +21,7 @@ def quantifying(array_size, init, interval, input):
 #--------------------------------------------------------------------
 
 start_set     = 1   # <<<<<<<<<<<<
-end_set       = 25  # <<<<<<<<<<<<
+end_set       = 5   # <<<<<<<<<<<<
 
 n_sets        = end_set - start_set + 1
 
@@ -34,7 +34,7 @@ for n in range(n_sets):
     network_size              = np.array([100 * 4 + 2*25, 100, 100, 100, 100])  # <<<<<<<<<<<<
     slope                     = 25                                              # <<<<<<<<<<<<
     alpha                     = 0.000001                                        # <<<<<<<<<<<<
-    epoch_of_learning         = 100000                                          # <<<<<<<<<<<<
+    epoch_of_learning         = 200000                                          # <<<<<<<<<<<<
     drop_rate                 = 0.2                                             # <<<<<<<<<<<<
     momentum_rate             = 0.9                                             # <<<<<<<<<<<<
 
@@ -42,10 +42,10 @@ for n in range(n_sets):
 
     retrain = False                                                             # <<<<<<<<<<<<
     if retrain == True:
-        Machine.weight_list            = np.load("100x100x100_25_0.000001_0.1m_0.2_[" + str(start_set + n) +  "]_weight_list.npy"          , allow_pickle=True)
-        Machine.slope_list             = np.load("100x100x100_25_0.000001_0.1m_0.2_[" + str(start_set + n) +  "]_slope_list.npy"           , allow_pickle=True)
-        Machine.weight_list_momentum   = np.load("100x100x100_25_0.000001_0.1m_0.2_[" + str(start_set + n) +  "]_weight_list_momentum.npy" , allow_pickle=True)
-        Machine.slope_list_momentum    = np.load("100x100x100_25_0.000001_0.1m_0.2_[" + str(start_set + n) +  "]_slope_list_momentum.npy"  , allow_pickle=True)
+        Machine.weight_list            = np.load("100x100x100_25_0.000001_0.2m_0.2_[" + str(start_set + n) +  "]_weight_list.npy"          , allow_pickle=True)
+        Machine.slope_list             = np.load("100x100x100_25_0.000001_0.2m_0.2_[" + str(start_set + n) +  "]_slope_list.npy"           , allow_pickle=True)
+        Machine.weight_list_momentum   = np.load("100x100x100_25_0.000001_0.2m_0.2_[" + str(start_set + n) +  "]_weight_list_momentum.npy" , allow_pickle=True)
+        Machine.slope_list_momentum    = np.load("100x100x100_25_0.000001_0.2m_0.2_[" + str(start_set + n) +  "]_slope_list_momentum.npy"  , allow_pickle=True)
 
 
 
@@ -121,10 +121,10 @@ for n in range(n_sets):
 
 
 
-    np.save("100x100x100_25_0.000001_0.1m_0.2_[" + str(start_set + n) +  "]_weight_list"             , Machine.weight_list                 ) # <<<<<<<<<<<<
-    np.save("100x100x100_25_0.000001_0.1m_0.2_[" + str(start_set + n) +  "]_slope_list"              , Machine.slope_list                  ) # <<<<<<<<<<<<
-    np.save("100x100x100_25_0.000001_0.1m_0.2_[" + str(start_set + n) +  "]_weight_list_momentum"    , Machine.weight_list_momentum        ) # <<<<<<<<<<<<
-    np.save("100x100x100_25_0.000001_0.1m_0.2_[" + str(start_set + n) +  "]_slope_list_momentum"     , Machine.slope_list_momentum         ) # <<<<<<<<<<<<
+    np.save("100x100x100_25_0.000001_0.2m_0.2_[" + str(start_set + n) +  "]_weight_list"             , Machine.weight_list                 ) # <<<<<<<<<<<<
+    np.save("100x100x100_25_0.000001_0.2m_0.2_[" + str(start_set + n) +  "]_slope_list"              , Machine.slope_list                  ) # <<<<<<<<<<<<
+    np.save("100x100x100_25_0.000001_0.2m_0.2_[" + str(start_set + n) +  "]_weight_list_momentum"    , Machine.weight_list_momentum        ) # <<<<<<<<<<<<
+    np.save("100x100x100_25_0.000001_0.2m_0.2_[" + str(start_set + n) +  "]_slope_list_momentum"     , Machine.slope_list_momentum         ) # <<<<<<<<<<<<
 
 
 
