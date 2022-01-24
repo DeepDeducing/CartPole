@@ -2,9 +2,6 @@ import numpy as np
 import gym
 import math
 
-""" Please note that, the initial state in each iteration is set to:
-        self.state = self.np_random.uniform(low= -1, high= 1, size=(4,)) """
-
 #--------------------------------------------------------------------
 
 def inverse_sigmoid(input):
